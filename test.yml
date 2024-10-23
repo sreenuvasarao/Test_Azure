@@ -1,13 +1,12 @@
-resource:
- repository:
-  -repository: Test_Azure
-   type:githubenterpride
-   ref:main
-   endpoint: Test_Azure
+ resources:
+   repositories:
+     - repository: Test_Azure
+       type:githubenterpride
+       ref:main
+       endpoint:Test_Azure
 
-
-branches:
-  include:
-     - main
-     - dev
-     - feature/*
+        branches:
+          include:
+            - main
+            - dev
+            - feature/*
